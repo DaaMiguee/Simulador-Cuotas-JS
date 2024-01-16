@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Primera Pre-entrega</title>
+    <title>Simulador de cuotas</title>
 </head>
+
 <body>
     <main>
-        <h1 class="title">Primera Pre-entrega Torres Miguel</h1>
+        <h1>Simulador de cuotas</h1>
+        <section class="box">
+            <div class="text-container">
+                <div class="monto-container">
+                    <label for="monto">Monto:</label>
+                    <input id="monto" type="number" placeholder="Monto a calcular">
+                </div>
+                <div class="cuotas-container">
+                    <label for="cuotas">Cuotas:</label>
+                    <input id="cuotas" type="number" placeholder="Cantidad de cuotas">
+                </div>
+                <p id="total" class="total">Vas a pagar: $0</p>
+            </div>
+            <div class="btn-container">
+                <button id="clear">Otra operación</button>
+                <button id="accept">Aceptar</button>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p>Conoce más en <a target="_blank" href="https://github.com/DaaMiguee">mi Github</a></p>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

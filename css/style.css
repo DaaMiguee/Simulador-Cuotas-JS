@@ -1,15 +1,96 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
 }
-
-body{
-    background-color: #586F7C;
+body {
+    background-color: #121212;
 }
-.title{
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 400px;
-    font-family: Arial, Helvetica, sans-serif;
+main {
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: #fff;
+    margin-bottom: 50px;
+}
+.box {
+    background-color: #2a2a2a;
+    max-width: 650px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 25px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    width: 75%;
+}
+.cuotas-container,
+.monto-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+label {
+    font-size: 1rem;
+    color: #fff;
+}
+input {
+    color: #fff;
+    background-color: #181818;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    &:focus{
+        outline: #4f725b solid 2px;
+    }
+}
+.total {
+    font-size: 1rem;
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.btn-container button {
+    padding: 8px;
+    font-size: 0.92rem;
+    border: none;
+    background: #4f725b;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    &:hover {
+        background: #689276;
+    }
+}
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: #fff;
+}
+footer a{
+    color: #689276;
 }
